@@ -2,6 +2,7 @@ package net.twig.testingmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.twig.testingmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +12,6 @@ public class TestingMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
 	}
 }
